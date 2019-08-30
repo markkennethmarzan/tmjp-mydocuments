@@ -1,0 +1,19 @@
+{
+  "name": "payroll-holiday-api",
+  "version": "1.0.0",
+  "description": "API for TMJ Payroll Holiday Management Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Larry Barrios Jr. - TMJP DX Labs",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.488.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "uuid": "^3.3.2"
+  }
+}

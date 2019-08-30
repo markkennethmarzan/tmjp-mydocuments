@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <title>Online Help Documentation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/ab211e8563.js"></script>
+    <script src="src/sitescript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <div class="logo">
+                    <p><img src="public/images/logo-tmj.png" alt="logo-tmj" width="83px" href="index.html"></p>
+                </div>
+                <nav>
+                    <ul class="d-flex">
+                        <li class="active">Docs</li>
+                        <li>Nav1</li>
+                        <li>Nav2</li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <section class="main d-flex">
+        <div class="sidebar">
+                <div class="search">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </div>
+                <nav class="nav nav-pills">
+                    <ul class="nav nav-stacked" id="accordion1">
+                        <li>TMJ Contact Center Solution </li>
+                        <li><a href="#ccp" class="nav-link">What is CCP?</a></li>
+                        <li><a href="#login" class="nav-link">Logging in to Amazon Connect (as an admin) </a></li>
+                        <li><a href="">View Agents’ Basic Stats</a></li>
+                        <li class="panel"> <a data-toggle="collapse" data-parent="#accordion1"
+                                href="#phone_number">Phone Number</a>
+                            <ul id="phone_number" class="collapse">
+                                <li>Claiming a Phone Number </li>
+                                <li>Configuring a Phone Number</li>
+                                <li>Releasing a Phone Number</li>
+                            </ul>
+                        </li>
+                        <li class="panel"> <a data-toggle="collapse" data-parent="#accordion1"
+                                href="#hours_of_operation">Hours of Operation</a>
+                            <ul id="hours_of_operation" class="collapse">
+                                <li>Creating an Hour of Operation</li>
+                                <li>Editing Hours of Operation</li>
+                            </ul>
+                        </li>
+                        <li class="panel"> <a data-toggle="collapse" data-parent="#accordion1"
+                            href="#queue">Queue</a>
+                            <ul id="queue" class="collapse">
+                                <li>Creating a Queue</li>
+                                <li>Editing a Queue</li>
+                                <li>Disabling a Queue</li>
+                            </ul>
+                        </li>
+                        <li class="panel"> <a data-toggle="collapse" data-parent="#accordion1"
+                            href="#routing_profile">Routing Profile</a>
+                            <ul id="routing_profile" class="collapse">
+                                <li>Creating a Routing Profile</li>
+                                <li>Editing a Routing Profile</li>
+                            </ul>
+                        </li>
+                        <li class="panel"> <a data-toggle="collapse" data-parent="#accordion1"
+                            href="#user">User</a>
+                            <ul id="user" class="collapse">
+                                <li>Creating a User</li>
+                                <li>Editing a User</li>
+                                <li>Removing a User</li>
+                            </ul>
+                        </li>
+                        <li class="panel"> <a data-toggle="collapse" data-parent="#accordion1"
+                            href="#quick_connects">Quick Connects</a>
+                            <ul id="quick_connects" class="collapse">
+                                <li>Creating a Quick Connect</li>
+                                <li>Editing a Quick Connect</li>
+                            </ul>
+                        </li>
+                        <li class="panel"> <a data-toggle="collapse" data-parent="#accordion1"
+                            href="#realtime_metrics">Real-Time Metrics</a>
+                            <ul id="realtime_metrics" class="collapse">
+                                <li>Checking Agents’ Real-Time Metrics</li>
+                                <li>Saving Real-Time Metrics</li>
+                                <li>Downloading Real-Time Metrics</li>
+                            </ul>
+                        </li>
+                        <li class="panel"> <a data-toggle="collapse" data-parent="#accordion1"
+                            href="#historical_metrics">Historical Metrics</a>
+                            <ul id="historical_metrics" class="collapse">
+                                <li>Checking Agents’ Historical Metrics</li>
+                                <li>Saving Historical Metrics</li>
+                                <li>Downloading Real-Time Metrics</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <div class="breadcrumbs">
+                    <a href="">Amazon Connect Documentation</a>
+                    » 
+                    <a href="">What is CCP?</a>
+                    <div data-spy="scroll" data-target=".sidebar" data-offset="0">
+                        <div id="ccp">
+                            <h4>What is CCP?</h4>
+                            <p>Amazon Connect is a cloud-based contact center solution. It provides rich metrics and real-time reporting that allow you to optimize contact routing.</p>
+                            <p class="note">Note: Data used in the screenshots are dummy and only used for documentation and testing purposes. Any resemblance in names, places, or other things are purely coincidental and should therefore be ignored.</p>
+                        </div>
+                        <div id="login">
+                            <h4>Logging in to Amazon Connect (as an admin)</h4>
+                            <ul>
+                                <li>
+                                    <p>To start using Amazon Connect, the admin should first log into their account. Following this link will redirect you to the log in form of your account: </p>
+                                    <p>User Acceptance Testing (UAT) Link: <a>https://tmjccs-test.awsapps.com/connect/home</a></p>
+                                    <div class="item-box">
+                                        <img src="public/images/common/login.png" alt="login">
+                                        <span class="figure">Figure 1. Amazon Connect Log-In Form</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Type your username and password in the input boxes. Then, click on the blue “Sign In” button.</p>
+                                    <div class="item-box">
+                                        <img src="public/images/common/login-credentials.png" alt="input-credentials">
+                                        <span class="figure">Figure 2. Inputting credentials in the Log-In Form</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>
+
+
+</html>

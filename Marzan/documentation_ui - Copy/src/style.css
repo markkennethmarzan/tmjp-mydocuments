@@ -1,0 +1,25 @@
+body{font-family: }
+ul,li,h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0; list-style-type: none}
+/* header */
+header{background: #20232a; color: #fff; width: 100%; position: fixed;}
+header .logo{font-family: Arial, Helvetica, sans-serif;  font-weight: 700; color: #44c1e3; width: 350px; text-align: center;padding: 12px 0}
+header .logo p{text-align: left; margin: 0 30px}
+header .logo img{cursor: pointer;}
+header nav {padding: 0 20px;}
+header nav ul li{list-style-type: none; font-size: 18px; padding: 17px 20px 17px 20px;}
+header nav ul li.active, header nav ul li:hover{color: #61dafb; border-bottom: 2px solid #61dafb; cursor: pointer;}
+/* sidebar */
+.sidebar {width: 350px;padding: 12px;border: 1px solid #ddd;height: 100%; position: fixed}
+.sidebar .search{border-bottom: 1px solid #ddd; padding-bottom: 20px}
+.sidebar{overflow-y: scroll}
+.sidebar ul > li{width: 100%; padding: 5px 0;}
+.sidebar ul > li:first-of-type{text-align: center; font-size: 16px; font-weight: 700}
+.sidebar ul > li > a{color: #000; font-size: 14px;}
+.sidebar ul li > ul > li {font-size: 14px; padding-left: 30px}
+.sidebar ul li > ul > li:first-of-type{font-weight: unset; font-size: 14px; text-align: unset}
+.sidebar ul > li > a.active, .content .sidebar ul > li > a:hover{font-weight: 700; }
+/* content */
+section.main{padding-top: 63.28px}
+.content {padding: 5px 20px; width: 74%; margin-left: 350px}
+.content .breadcrumbs{font-size: 13px;}
+.content .breadcrumbs a:last-of-type{color: #000}

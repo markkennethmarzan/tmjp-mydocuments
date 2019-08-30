@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "holiday-client-en",
+      "script": "npx",
+      "interpreter": "none",
+      "args": "serve -p 8001"
+    }
+  ]
+}
