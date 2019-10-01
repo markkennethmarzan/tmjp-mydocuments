@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <title>Sample Notif</title>
+    <style>
+        .container{display: flex; width: 80%; justify-content: space-between; margin:0 auto;}
+        .col{border: 1px solid #ddd; width: 50%; padding: 20px}
+        .notification{position: relative;}
+        #counter{background: #ddd; padding: 0px 55px}
+        #countNotif{position: absolute; color: red; left: 0; font-size: 12px}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col col-1">
+            <form action="">
+                Job:
+                <input type="text" id="job" />
+                <button type="button" id="add" onclick="addRecord();" required>Add </button>
+                <p>Job Counter: <span id="counter"></span></p>
+            </form>    
+            <div class="log">
+                <p>Logs:</p>
+                <table>
+                    <tr>
+                        <td><span id="logs"></span></td>
+                        <td><span id="ts"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col col-2">
+            <div class="notification">
+                <img src="bell.png" alt="" width="40">
+                <span id='countNotif'></span>
+            </div>
+            <p> <span id='values'></span></p>
+        </div>
+    </div>
+   
+
+
+    <script type="text/javascript">
+
+    values = Array();
+    ts = [];
+    function addRecord() {
+        var inp = document.getElementById('job');
+        var today = new Date();
+    var timestamp = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()+'-'+today.getHours() + ":" + today.getMinutes()     + ":" +today.getSeconds();
+        values.push(inp.value);
+        inp.value = "";
+        ts.push(" - "+timestamp);
+        tsDisplay();
+        displayRecord();
+        countNotif();
+        counter();
+        displayLogs();
+    }
+
+    function tsDisplay(){
+        document.getElementById("ts").innerHTML = ts.join("<br>");
+    }
+
+    function displayLogs() {
+        document.getElementById("logs").innerHTML = values.join("<br>");
+    }
+
+    function displayRecord() {
+        document.getElementById("values").innerHTML = values.join("<br>");
+    }
+    
+    function countNotif(){
+        document.getElementById("countNotif").innerHTML = values.length;
+    }
+
+    function counter(){
+        document.getElementById("counter").innerHTML = values.length;
+    }
+    </script>
+</body>
+
+</html>

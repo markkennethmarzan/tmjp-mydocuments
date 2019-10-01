@@ -1,1 +1,4 @@
 https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=accordion-with-plus-minus-icon
+https://openclassrooms.com/en/courses/2504541-ultra-fast-applications-using-node-js/2505444-practical-exercises-the-to-do-list
+https://codeforgeek.com/real-time-notification-system-using-socket-io/
+https://www.scotchmedia.com/tutorials/express/authentication/1/06/

@@ -13,7 +13,7 @@ import Footer from "./components/Footer"
 function App() {
   const today = new Date().toISOString("en-JP").slice(0, 10)
   const API_URL =
-    "http://ec2-3-112-198-127.ap-northeast-1.compute.amazonaws.com/api/holidays"
+    "localhost:8000"
 
   const [date, setDate] = useSessionStorage("date", today)
   const [name, setName] = useSessionStorage("name", "")

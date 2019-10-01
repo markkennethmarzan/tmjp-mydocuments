@@ -1,0 +1,53 @@
+FUNDAMENTALS
+Variables (const, let, var)
+Data Types (boolean, string, array, object, number)
+Operators (+, -, *, /, ==, ===, >, <, <=, >=, &&, ||, new)
+Literals ("", '', `Hello, ${name}!`, "Hello, " + name)
+Anonymous Functions () => {}
+Function Expression const getName = () => {}
+Conditional (if-else)
+Ternary Operator ( ? : )
+Loops (for, while, do-while)
+Spread Operator ...name
+
+DOM MANIPULATION
+getElementById
+getElementsByClassName (name[0])
+getElementsByTagName
+querySelector (".big")
+querySelectorAll
+Node Methods
+getAttribute 
+setAttribute
+style (let btn = document.querySelector("button"); 
+		btn.style.color = "blue")
+Other DOM Methods
+
+CLASS
+Properties
+Methods
+This
+Destructuring const {name, age} = props
+
+ARRAY
+Map (array.map(item => (item.style.backgroundColor = blue)))
+Filter
+Sort
+Reduce
+Other HOC
+
+PROMISES
+Callbacks
+Then
+Try-Catch
+Async/Await
+
+ADVANCED
+Scoping
+Hoisting
+Closure
+
+EXTRA
+new Operator ([], new Array)
+IIFE (function getName() = {})()
+Constructor (class)

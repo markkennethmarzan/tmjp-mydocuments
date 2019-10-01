@@ -10,7 +10,7 @@ app.use(cors())
 app.use("/api/holidays", holidays)
 dotenv.config()
 
-const port = process.env.PORT
+const port = 8000
 app.listen(port, () => {
   console.log(`Listening to ${port}`)
 })

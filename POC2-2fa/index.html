@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>POC2-Test</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	var from,to,subject,text;
+	$("#send_email").click(function(){		
+		to=$("#to").val();		
+		$("#message").text("Sending E-mail...Please wait");
+		$.get("http://localhost:3000/send",{to:to},function(data){
+		if(data=="sent")
+		{
+			$("#message").empty().html("An email has been send to "+to+" . Please check inbox !</p>");
+		}
+
+});
+	});
+});
+</script>
+<style>
+	body{font-size: 18px; font-family: 'Times New Roman', Times, serif}
+	input{margin: 5px}
+	.username{display: block;}
+	h2{display: block}
+</style>
+</head>
+<body>
+<div id="container">
+<h1>Register</h1>
+Name: <input type="text" id="myName" placeholder="Complete Name"><br>
+Email: <input type="text" id="to" placeholder="email"><br>
+Password: <input type="password" id="password"><br>
+<button id="send_email">Register</button><br>
+<span id="message"></span>
+</div>
+</body>
+</html>

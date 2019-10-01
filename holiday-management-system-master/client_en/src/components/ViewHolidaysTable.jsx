@@ -11,7 +11,7 @@ const ListViewContent = () => {
   }
 
   const API_URL =
-    "http://ec2-3-112-198-127.ap-northeast-1.compute.amazonaws.com/api/holidays"
+    "localhost:8000/api/holidays"
 
   let [holidaysList, setHolidaysList] = useState([])
 
