@@ -25,7 +25,7 @@ app.get('/send',function(req,res){
     rand=Math.floor((Math.random() * 100000) + 54);
 	host=req.get('host');
 	console.log(host);
-	link="http://"+req.get('host')+"/verify?id="+rand;
+	link="http://"+req.get('host')+"/verify?code="+rand;
 	console.log(link)
 	mailOptions={
 		to : req.query.to,
@@ -40,16 +40,33 @@ app.get('/send',function(req,res){
 	 }else{
 		console.log("Message sent: " + response.message);
 	res.end("sent");
-		}
+	}
 });
 });
-
+// {
+// 	req: {
+//		headers: {},
+// 		query: {
+// 			name: 123456
+// 		},
+// 		body: {
+//			data: {
+// 				verify: 1234,
+// 				email: "sdfghj",
+// 				name:
+// 			},
+//		},
+// 		protocol: 
+// 	}
+// }
+// <input id="input-red" name="verify">
 app.get('/verify',function(req,res){
 console.log(req.protocol+":/"+req.get('host'));
 if((req.protocol+"://"+req.get('host'))==("http://"+host))
 {
 	console.log("Successfully Registered into the system");
-	if(req.query.id==rand)
+	console.log(req.query.code);
+	if(req.query.code==rand)
 	{
 		console.log("Successfully Verified");
 		res.end("You have successfully registered into the system.Your username/email:"+mailOptions.to);
